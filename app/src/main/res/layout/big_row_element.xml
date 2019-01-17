@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginRight="28dp"
+    android:layout_marginBottom="2dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/smallStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/smallPot3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/smallTextStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S/2S"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largeStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/largeTextStatistics" />
+
+    <TextView
+        android:id="@+id/largeTextStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="2sp"
+        android:text="L/10L"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/smallPot1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/smallPotAvailable"
+        android:text="S"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+
+    <TextView
+        android:id="@+id/largePot1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot2"
+        app:layout_constraintStart_toEndOf="@id/smallPot1"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot3"
+        app:layout_constraintStart_toEndOf="@id/largePot1"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot3"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot4"
+        app:layout_constraintStart_toEndOf="@id/largePot2"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot4"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot5"
+        app:layout_constraintStart_toEndOf="@id/largePot3"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot6"
+        app:layout_constraintStart_toEndOf="@id/largePot4"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot6"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot7"
+        app:layout_constraintStart_toEndOf="@id/largePot5"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot7"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot8"
+        app:layout_constraintStart_toEndOf="@id/largePot6"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot8"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot9"
+        app:layout_constraintStart_toEndOf="@id/largePot7"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot9"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/largePot10"
+        app:layout_constraintStart_toEndOf="@id/largePot8"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+    <TextView
+        android:id="@+id/largePot10"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="2dp"
+        android:background="@color/largePotAvailable"
+        android:text="L"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/smallPot2"
+        app:layout_constraintStart_toEndOf="@id/largePot9"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+
+    <TextView
+        android:id="@+id/smallPot2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@color/smallPotAvailable"
+        android:text="S"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/largePot10"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics" />
+
+
+</android.support.constraint.ConstraintLayout>
+

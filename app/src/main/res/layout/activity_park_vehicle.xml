@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewFlipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.parkCarScreen.ParkVehicleActivity">
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/parking"
+            app:layout_constraintBottom_toTopOf="@id/number_plate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/moto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/moto_white"
+            app:layout_constraintBottom_toTopOf="@id/btn_park"
+            app:layout_constraintEnd_toStartOf="@id/car"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/car"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/car_black"
+            app:layout_constraintBottom_toBottomOf="@id/moto"
+            app:layout_constraintEnd_toStartOf="@+id/bus"
+            app:layout_constraintStart_toEndOf="@id/moto" />
+
+        <ImageButton
+            android:id="@+id/bus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_button"
+            android:src="@drawable/bus_white"
+            app:layout_constraintBottom_toBottomOf="@id/moto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/car" />
+
+        <EditText
+            android:id="@+id/number_plate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/number_plate"
+            android:inputType="textCapCharacters"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/moto" />
+
+        <Button
+            android:id="@+id/btn_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/rounded_button"
+            android:text="@string/park"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_vehicle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/car_black"
+            app:layout_constraintBottom_toTopOf="@id/btn_go_to_parking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_level_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="404"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/iv_vehicle"
+            app:layout_constraintStart_toStartOf="@id/iv_vehicle"
+            app:layout_constraintTop_toBottomOf="@id/iv_vehicle" />
+
+        <TextView
+            android:id="@+id/tv_spot_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/iv_vehicle"
+            app:layout_constraintStart_toStartOf="@id/iv_vehicle"
+            app:layout_constraintTop_toBottomOf="@id/tv_level_number" />
+
+        <Button
+            android:id="@+id/btn_go_to_parking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/rounded_button"
+            android:text="GO TO PARKING"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</ViewFlipper>

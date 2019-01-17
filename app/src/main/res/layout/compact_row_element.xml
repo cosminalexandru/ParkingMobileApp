@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginRight="28dp"
+    android:layout_marginBottom="1dp">
+
+    <TextView
+        android:id="@+id/smallStatistics3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/smallPot3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/smallTextStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_2s"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/smallStatistics3" />
+
+    <TextView
+        android:id="@+id/compactStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/compactTextStatistics" />
+
+    <TextView
+        android:id="@+id/compactTextStatistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2sp"
+        android:layout_marginRight="2sp"
+        android:text="@string/c_20c"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/smallPot3"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/smallPotAvailable"
+        android:text="@string/s"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/smallStatistics3" />
+
+
+    <TextView
+        android:id="@+id/compactPot1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot2"
+        app:layout_constraintStart_toEndOf="@id/smallPot3"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot3"
+        app:layout_constraintStart_toEndOf="@id/compactPot1"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot3"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot4"
+        app:layout_constraintStart_toEndOf="@id/compactPot2"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot4"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot5"
+        app:layout_constraintStart_toEndOf="@id/compactPot3"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot6"
+        app:layout_constraintStart_toEndOf="@id/compactPot4"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot6"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot7"
+        app:layout_constraintStart_toEndOf="@id/compactPot5"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot7"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot8"
+        app:layout_constraintStart_toEndOf="@id/compactPot6"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot8"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot9"
+        app:layout_constraintStart_toEndOf="@id/compactPot7"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot9"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot10"
+        app:layout_constraintStart_toEndOf="@id/compactPot8"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot10"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot11"
+        app:layout_constraintStart_toEndOf="@id/compactPot9"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot11"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot12"
+        app:layout_constraintStart_toEndOf="@id/compactPot10"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot12"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot13"
+        app:layout_constraintStart_toEndOf="@id/compactPot11"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot13"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot14"
+        app:layout_constraintStart_toEndOf="@id/compactPot12"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot14"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot15"
+        app:layout_constraintStart_toEndOf="@id/compactPot13"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot15"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot16"
+        app:layout_constraintStart_toEndOf="@id/compactPot14"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot16"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot17"
+        app:layout_constraintStart_toEndOf="@id/compactPot15"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot17"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot18"
+        app:layout_constraintStart_toEndOf="@id/compactPot16"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot18"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot19"
+        app:layout_constraintStart_toEndOf="@id/compactPot17"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot19"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/compactPot20"
+        app:layout_constraintStart_toEndOf="@id/compactPot18"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/compactPot20"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="1dp"
+        android:background="@color/compactPotAvailable"
+        android:text="C"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/smallPot4"
+        app:layout_constraintStart_toEndOf="@id/compactPot19"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+    <TextView
+        android:id="@+id/smallPot4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@color/smallPotAvailable"
+        android:text="S"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/compactPot20"
+        app:layout_constraintTop_toTopOf="@id/smallPot3" />
+
+</android.support.constraint.ConstraintLayout>

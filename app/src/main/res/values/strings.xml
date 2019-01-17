@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ParkingApp</string>
+    <string name="park_vehicle">PARK VEHICLE</string>
+    <string name="free_spot">FREE SPOT</string>
+    <string name="number_plate">Insert plate number</string>
+    <string name="park">PARK</string>
+    <string name="s_2s">S/2S</string>
+    <string name="c_20c">C/20C</string>
+    <string name="s">S</string>
+</resources>
